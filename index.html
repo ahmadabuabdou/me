@@ -418,8 +418,21 @@
                     </div>
                 </div>
             </footer>
-            <!-- End footer Area -->		
+            <!-- End footer Area -->
 
+			<script type="text/javascript">
+				$(document).ready(function(){    
+				    //Check if the current URL contains '#'
+				    if(document.URL.indexOf("#")==-1){
+				        // Set the URL to whatever it was plus "#".
+				        url = document.URL+"#";
+				        location = "#";
+
+				        //Reload the page
+				        location.reload(true);
+				    }
+				});
+			</script>
 			<script src="js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="js/popper.min.js"></script>
 			<script src="js/vendor/bootstrap.min.js"></script>			
