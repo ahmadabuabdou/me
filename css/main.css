@@ -2518,7 +2518,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
-.home-about-right p {
+.home-about-right p, a {
   margin-bottom: 30px;
   max-width: 445px;
 }
