@@ -132,7 +132,6 @@ window.addEventListener("load", () =>{
         $('#mc_embed_signup').find('form').ajaxChimp();
     });
 //------- Carusel  js --------//  
-
   	const myCarousel = document.getElementById('myCarousel')
   	myCarousel.addEventListener('slid.bs.carousel', function () {
     const activeItem = this.querySelector(".active");
