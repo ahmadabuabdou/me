@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body >
@@ -414,44 +415,45 @@ The sorting and the post-voting phase <br>
     <!--- Portfoilo Section End -->
 
     <!-- Testemonial Start -->
-    <section class="contact-section sec-padding testimonial-area section-gap" id="testimonial">
-      <div class="container">
-        <div class="row">
+    <section class="testimonial-section sec-padding" id="testimonial">
+  <div class="container">
+    <div class="row">
           <div class="section-title">
             <h2>Client’s Feedback About Me</h2>
           </div>
         </div>
-            <div class="single-testimonial item d-flex flex-row">
-                <div class="thumb">
-                    <img class="img-fluid" src="img/user1.png" alt="">
-                </div>
-                <i class="fas fa-quote-left"></i>
-                <div class="desc">
-                    <p>
-                        "Awsome!<br>I love it, simple and attractive" <span><i class="fas fa-quote-right" style="margin-left: 10px;"></i></span>       
-                    </p>
-
-                    <h4>Rita Asfour</h4>
-                    <p>Fitafe'</p>
-                </div>
-               
-            </div>
-            <div class="single-testimonial item d-flex flex-row">
-                <div class="thumb">
-                    <img class="img-fluid" src="img/user2.png" alt="">
-                </div>
-                <i class="fas fa-quote-left"></i>
-                <div class="desc">
-                    <p>
-                         "He is a self-aware person on his work and professionalism , quality of work is really great and smoothy"
-                         <span><i class="fas fa-quote-right" style="margin-left: 10px;"></i></span> 
-                    </p>
-                    <h4>Hisham Safadi</h4>
-                    <p>UDENZ Labs</p>
-                </div>
-            </div>
+    <div class="row align-items-center">
+      <div class="col-md-6 testi-img">
+        <div class="img-box">
+          <div class="circle"></div>
+          <div class="img-box-inner">
+            <img src="img/1.png">
+          </div>
+        </div>
       </div>
-    </section>
+      <div class="col-md-6">
+        <div id="myCarousel" class="carousel slide" data-bs-interval="5000" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item testi-item active" data-color="var(--white-alpha-25)" data-img="img/1.png">
+              <p>"Awsome!<br>I love it, simple and attractive"</p>
+              <h3>Rita Asfour - <span>Fitafe'</span></h3>
+            </div>
+            <div class="carousel-item testi-item" data-color="var(--white-alpha-25)" data-img="img/2.png">
+              <p>"He is a self-aware person on his work and professionalism , quality of work is really great and smoothy"<span></p>
+              <h3>Dr.Hisham Safadi - <span>UDENZ Labs</span></h3>
+            </div>
+          </div>
+          <button class="carousel-control-prev"  type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="carousel-control-next"  type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
     <!-- Testemonial End -->
 
     <!--- Contact Section Start -->
@@ -544,7 +546,7 @@ The sorting and the post-voting phase <br>
 <!--- Portfoilo Item Details Popup End -->
 
 
-
+<script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

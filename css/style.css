@@ -931,81 +931,78 @@ Header -------------------
 }
 
 /*--------- start testimonial area  -------------*/
-.testimonial-area {
-background-color: var(--white-alpha-40);
-position: relative;
-align-items: center;
-justify-content: center;
+.testimonial-section{
+    min-height: 100vh;
+}
+.testi-img .img-box{
+    max-width: 360px;
+    margin:auto;
+    text-align: center;
+    position: relative;
+}
+.testi-img .circle{
+    height: 360px;
+    width: 360px;
+    background-color: var(--white-alpha-25);
+	border: 1px solid var(--white-alpha-40);
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    bottom: 0;
+    transition: all 0.5s ease;
+}
+.testi-img .img-box-inner{
+    position: relative;
+    border-radius: 0 0 180px 180px;
+    overflow:hidden;
+}
+.testi-img .img-box-inner img{
+    max-width: 310px;
+}
+.testimonial-section .carousel-inner{
+    margin-bottom: 20px;
+}
+.testimonial-section .carousel-control-prev{
+    margin-right: 10px;
+}
+.testimonial-section .carousel-control-next, 
+.testimonial-section .carousel-control-prev{
+    position: relative;
+    height: 35px;
+    width: 35px;
+    background-color: var(--white); 
+    border: 1px solid var(--white-alpha-40);  
+    display: inline-flex;
+    border-radius: 50%;
 }
 
-.testimonial-area .owl-controls {
-  position: absolute;
-  left: 101%;
-  top: 25%;
+.testimonial-section .carousel-control-next:hover, 
+.testimonial-section .carousel-control-prev:hover{
+    background-color: var(--main-color); 
+    border: 1px solid var(--white-alpha-40);  
+    color: var(--white);
+}
+.carousel-control-prev,
+.carousel-control-next{
+	color: var(--main-color);
 }
 
-.testimonial-area .lnr-arrow-up, .testimonial-area .lnr-arrow-down {
-  background-color: var(--white-alpha-40);
-  /*box-shadow: -14.142px 14.142px 20px 0px rgba(157, 157, 157, 0.2);*/
-  padding: 14px;
-  color: var(--blue-dark);
-  font-weight: 500;
-  border: 1px solid #f5f5f5;
-  display: inline-flex;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+.carousel-control-prev:hover,
+.carousel-control-next:hover{
+	color: var(--white);
 }
 
-.testimonial-area .lnr-arrow-up:hover, .testimonial-area .lnr-arrow-down:hover {
-  background: #6d233e;
-  color: #fff;
-}
 
-.single-testimonial {
-	display: flex;
-	border-radius: 30px;
-	width: 80%;
-  	padding: 25px 30px 12px 30px;
-  	margin: auto;
-  	margin-bottom: 40px;
-  	-webkit-transition: all 0.3s ease 0s;
-  	-moz-transition: all 0.3s ease 0s;
-  	-o-transition: all 0.3s ease 0s;
- 	transition: all 0.3s ease 0s;
-  	background-color: var(--white-alpha-40);
-  	color: var(--blue-dark);
-  	font-family: inherit;
-  	font-weight: 400;
+.testimonial-section .carousel-control-prev img,
+.testimonial-section .carousel-control-next img{
+    width: 15px;
 }
-.single-testimonial i{
-	margin-right: 10px;
-	color: var(--blue-dark);
+.testi-item h3,
+.testi-item p{
+    font-size: 18px;
 }
-
-.single-testimonial p{
-	margin-bottom: 10px;
-}
-.single-testimonial:hover {
-  cursor: pointer;
-}
-
-.single-testimonial .thumb {
-  margin-right: 30px;
-}
-
-.single-testimonial h4 {
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  margin-bottom: 5px;
-}
-
-.single-testimonial:hover h4 {
-  color: var(--main-color);
-  cursor: pointer;
+.testi-item h3{
+    text-transform: capitalize;
 }
 
 /*--------- end testimonial area  -------------*/
@@ -1044,6 +1041,19 @@ justify-content: center;
 	.portfoilo-item{
 		width: calc(50% - 30px);
 	}
+	.testi-img .img-box{
+        max-width: 300px;
+    }
+    .testi-img .circle{
+        height: 300px;
+        width: 300px;
+    }
+    .testi-img .img-box-inner{
+        border-radius: 0 0 150px 150px;
+    }
+    .testi-img .img-box-inner img{
+        max-width: 230px;
+    }
 
 }
 
@@ -1071,6 +1081,9 @@ justify-content: center;
 	.contact-info-item{
 		padding: 0;
 	}
+	.testi-img{
+        margin-bottom: 25px;
+    }
 
 
 }

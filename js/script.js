@@ -131,3 +131,11 @@ window.addEventListener("load", () =>{
   $(document).ready(function() {
         $('#mc_embed_signup').find('form').ajaxChimp();
     });
+//------- Carusel  js --------//  
+
+  	const myCarousel = document.getElementById('myCarousel')
+  	myCarousel.addEventListener('slid.bs.carousel', function () {
+    const activeItem = this.querySelector(".active");
+    document.querySelector(".testi-img img").src = activeItem.getAttribute("data-img");
+    document.querySelector(".testi-img .circle").style.backgroundColor = activeItem.getAttribute("data-color");
+  });
