@@ -13,5 +13,7 @@ $headers = "From: noreply@ahmadabuabdou.com";
 if($email!=NULL){
     mail($to,$subject,$txt,$headers);
     echo "Your Message has Been Sent";
+}else {
+    echo "failed";
 }
 ?>
