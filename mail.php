@@ -12,4 +12,7 @@ if($email!=NULL){
     mail($to,$subject,$txt,$headers);
     echo 'Your message has been sent.';
 }
+else{
+    echo 'failed';
+}
 ?>
