@@ -131,11 +131,3 @@ window.addEventListener("load", () =>{
 		dayNight.querySelector("i").classList.add("fa-moon");
 	}
 });
-
- /*------- Mailchimp js --------*/  
-
-  
-  $(document).ready(function() {
-        $('#mc_embed_signup').find('form').ajaxChimp();
-    });
-
