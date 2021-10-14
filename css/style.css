@@ -1054,12 +1054,12 @@ Header -------------------
     .testi-img .img-box-inner img{
         max-width: 230px;
     }
-    .testi-item{
+    .testi-item,
+    .carousel-control-prev,
+    .carousel-control-next{
     	margin-left: 15px;
-
     }
 
-}
 
 @media(max-width:767px){
 	.contact-form,
