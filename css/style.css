@@ -1055,7 +1055,7 @@ Header -------------------
         max-width: 230px;
     }
     .testi-item,
-    .carousel-control-prev,{
+    .carousel-control-prev{
     	margin-left: 15px;
     }
 
@@ -1093,7 +1093,7 @@ Header -------------------
 
 @media(max-width:575px){
 
-	.section-title h2,{
+	.section-title h2{
 		font-size: 24px;
 	}
 	.header .nav-inner ul li a{
