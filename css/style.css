@@ -1055,8 +1055,7 @@ Header -------------------
         max-width: 230px;
     }
     .testi-item,
-    .carousel-control-prev,
-    .carousel-control-next{
+    .carousel-control-prev,{
     	margin-left: 15px;
     }
 
