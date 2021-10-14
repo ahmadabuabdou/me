@@ -132,9 +132,10 @@ window.addEventListener("load", () =>{
 	}
 });
 
- //------- Mailchimp js --------//  
+ /*------- Mailchimp js --------*/  
 
   
   $(document).ready(function() {
         $('#mc_embed_signup').find('form').ajaxChimp();
     });
+
