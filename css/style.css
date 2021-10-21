@@ -715,7 +715,6 @@ Header -------------------
 	padding: 50px;
 }
 
-}
 .portfoilo-section .filters {
   text-align: center;
 }
@@ -753,6 +752,7 @@ Header -------------------
 .portfoilo-section .filters ul li.active {
   color: var(--main-color);
 }
+
 .portfoilo-item{
 	width: calc((100%/3) - 30px);
 	margin: 0 15px 30px;
@@ -1126,7 +1126,9 @@ Header -------------------
 	.testi-img{
         margin-bottom: 25px;
     }
-
+.portfoilo-section .filters ul li {
+    padding: 6px 6px;
+  }
 
 }
 
