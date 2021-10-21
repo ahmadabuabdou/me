@@ -1,21 +1,3 @@
-/* ------------- light/dark theme ------------ */
-const dayNight = document.querySelector(".day-night");
-
-dayNight.addEventListener("click", () =>{
-	dayNight.querySelector("i").classList.toggle("fa-sun");
-	dayNight.querySelector("i").classList.toggle("fa-moon");
-	document.body.classList.toggle("dark");
-
-});
-
-window.addEventListener("load", () =>{
-	if (document.body.classList.contains("dark")) {
-		dayNight.querySelector("i").classList.add("fa-sun");
-	}
-	else{
-		dayNight.querySelector("i").classList.add("fa-moon");
-	}
-});
 window.addEventListener("load", ()=>{
 	document.querySelector(".main").classList.remove("hidden");
 	document.querySelector(".home-section").classList.add("active");
@@ -84,28 +66,6 @@ tabsContainer.addEventListener("click", (e) =>{
 	
 });
 
-//------- Filter  js --------//  
-
-	var $grid = $(".grid");    
-    $('.filters ul li').click(function(){
-    	$('.filters ul li').removeClass('active');
-    	$(this).addClass('active');
-        var data = $(this).attr('data-filter');
-        $grid.isotope({
-          filter: data
-        })
-      });
-
-      if(document.getElementById("portfolio")){
-      	$grid.isotope({
-      		itemSelector: ".all",
-            percentPosition: true,
-            masonry: {
-            	columnWidth: ".all"
-              }
-            });
-		};
-		
 /*----------------- Portfoilo Item Details Popup -------------*/
 document.addEventListener("click", (e) =>{
 	if(e.target.classList.contains("view-project-btn")){
@@ -150,3 +110,42 @@ function portfoiloItemDetails(portfoiloItem){
 	document.querySelector(".pp-body").innerHTML =
 	portfoiloItem.querySelector(".portfoilo-item-details").innerHTML;
 }
+/* ------------- light/dark theme ------------ */
+const dayNight = document.querySelector(".day-night");
+
+dayNight.addEventListener("click", () =>{
+	dayNight.querySelector("i").classList.toggle("fa-sun");
+	dayNight.querySelector("i").classList.toggle("fa-moon");
+	document.body.classList.toggle("dark");
+
+});
+
+window.addEventListener("load", () =>{
+	if (document.body.classList.contains("dark")) {
+		dayNight.querySelector("i").classList.add("fa-sun");
+	}
+	else{
+		dayNight.querySelector("i").classList.add("fa-moon");
+	}
+});
+
+//------- Filter  js --------//  
+	var $grid = $(".grid");    
+    $('.filters ul li').click(function(){
+    	$('.filters ul li').removeClass('active');
+    	$(this).addClass('active');
+        var data = $(this).attr('data-filter');
+        $grid.isotope({
+          filter: data
+        })
+      });
+
+      if(document.getElementById("portfolio")){
+      	$grid.isotope({
+      		itemSelector: ".all",
+            percentPosition: true,
+            masonry: {
+            	columnWidth: ".all"
+              }
+            });
+		};
