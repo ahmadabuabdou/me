@@ -714,6 +714,45 @@ Header -------------------
 .portfoilo-section{
 	padding: 50px;
 }
+
+}
+.portfoilo-section .filters {
+  text-align: center;
+}
+
+.portfoilo-section .filters ul {
+  padding: 0;
+}
+
+.portfoilo-section .filters ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 18px 15px;
+  cursor: pointer;
+  position: relative;
+  text-transform: uppercase;
+  color: var(--blue-dark);
+  font-size: 12px;
+  font-weight: 500;
+}
+.portfoilo-section .filters ul li:after {
+  content: "";
+  display: block;
+  width: calc(0% - 60px);
+  position: absolute;
+  height: 2px;
+  color: var(--main-color);
+  transition: width 350ms ease-out;
+}
+
+.portfoilo-section .filters ul li:hover:after {
+  width: calc(100% - 60px);
+  transition: width 350ms ease-out;
+}
+
+.portfoilo-section .filters ul li.active {
+  color: var(--main-color);
+}
 .portfoilo-item{
 	width: calc((100%/3) - 30px);
 	margin: 0 15px 30px;

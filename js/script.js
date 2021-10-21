@@ -1,4 +1,5 @@
-
+$(document).ready(function () {
+	"use strict";
 window.addEventListener("load", ()=>{
 	document.querySelector(".main").classList.remove("hidden");
 	document.querySelector(".home-section").classList.add("active");
@@ -67,7 +68,28 @@ tabsContainer.addEventListener("click", (e) =>{
 	
 });
 
+//------- Filter  js --------//  
 
+	var $grid = $(".grid");    
+    $('.filters ul li').click(function(){
+    	$('.filters ul li').removeClass('active');
+    	$(this).addClass('active');
+        var data = $(this).attr('data-filter');
+        $grid.isotope({
+          filter: data
+        })
+      });
+
+      if(document.getElementById("portfolio")){
+      	$grid.isotope({
+      		itemSelector: ".all",
+            percentPosition: true,
+            masonry: {
+            	columnWidth: ".all"
+              }
+            });
+		};
+		
 /*----------------- Portfoilo Item Details Popup -------------*/
 document.addEventListener("click", (e) =>{
 	if(e.target.classList.contains("view-project-btn")){
@@ -130,4 +152,5 @@ window.addEventListener("load", () =>{
 	else{
 		dayNight.querySelector("i").classList.add("fa-moon");
 	}
+});
 });

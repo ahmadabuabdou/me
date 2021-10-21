@@ -188,10 +188,17 @@
            <h2>recent work</h2>
          </div>
        </div>
-
-       <div class="row">
+       <div class="filters">
+          <ul>
+              <li class="active" data-filter="*">All</li>
+              <li data-filter=".web">web design</li>
+              <li data-filter=".mobile">mobile design</li>
+              <li data-filter=".logo">Logo design</li>
+          </ul>
+      </div>
+       <div class="row grid">
         <!--- Portfoilo Item Start -->
-        <div class="portfoilo-item">
+        <div class="portfoilo-item all web">
           <div class="portfoilo-item-thumbnail">
             <img src="img/portfolio/1.jpg">
           </div>
@@ -215,7 +222,7 @@ We Specialize in designing digital services with the most up-to-date AI technolo
         <!--- Portfoilo Item End -->
                 
         <!--- Portfoilo Item Start -->
-        <div class="portfoilo-item">
+        <div class="portfoilo-item all mobile">
           <div class="portfoilo-item-thumbnail">
             <img src="img/portfolio/2.jpg">
           </div>
@@ -238,7 +245,7 @@ We Specialize in designing digital services with the most up-to-date AI technolo
         <!--- Portfoilo Item End -->
 
         <!--- Portfoilo Item Start -->
-        <div class="portfoilo-item">
+        <div class="portfoilo-item all mobile">
           <div class="portfoilo-item-thumbnail">
             <img src="img/portfolio/3.jpg">
           </div>
@@ -263,7 +270,7 @@ We Specialize in designing digital services with the most up-to-date AI technolo
         <!--- Portfoilo Item End -->
 
         <!--- Portfoilo Item Start -->
-        <div class="portfoilo-item">
+        <div class="portfoilo-item all web">
           <div class="portfoilo-item-thumbnail">
             <img src="img/portfolio/4.jpg">
           </div>
@@ -290,7 +297,7 @@ The sorting and the post-voting phase <br>
         <!--- Portfoilo Item End -->
 
         <!--- Portfoilo Item Start -->
-        <div class="portfoilo-item">
+        <div class="portfoilo-item all mobile">
           <div class="portfoilo-item-thumbnail">
             <img src="img/portfolio/5.gif">
           </div>
@@ -313,7 +320,7 @@ The sorting and the post-voting phase <br>
         <!--- Portfoilo Item End -->
 
         <!--- Portfoilo Item Start -->
-        <div class="portfoilo-item">
+        <div class="portfoilo-item all web">
           <div class="portfoilo-item-thumbnail">
             <img src="img/portfolio/6.jpg">
           </div>
@@ -337,7 +344,7 @@ The sorting and the post-voting phase <br>
         <!--- Portfoilo Item End -->
 
         <!--- Portfoilo Item Start -->
-        <div class="portfoilo-item">
+        <div class="portfoilo-item all mobile">
           <div class="portfoilo-item-thumbnail">
             <img src="img/portfolio/7.jpg">
           </div>
@@ -361,7 +368,7 @@ The sorting and the post-voting phase <br>
         <!--- Portfoilo Item End -->
 
         <!--- Portfoilo Item Start -->
-        <div class="portfoilo-item">
+        <div class="portfoilo-item all mobile">
           <div class="portfoilo-item-thumbnail">
             <img src="img/portfolio/8.jpg">
           </div>
@@ -384,7 +391,7 @@ The sorting and the post-voting phase <br>
         <!--- Portfoilo Item End -->
 
         <!--- Portfoilo Item Start -->
-        <div class="portfoilo-item">
+        <div class="portfoilo-item all logo">
           <div class="portfoilo-item-thumbnail">
             <img src="img/portfolio/9.jpg">
           </div>
@@ -544,6 +551,12 @@ The sorting and the post-voting phase <br>
   </div>
 </div>
 <!--- Portfoilo Item Details Popup End -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script type='text/javascript' >
+    $(window).load(function() {
+        $.getScript('https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js', function() { });
+    });
+</script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/script.js"></script>
 </body>
