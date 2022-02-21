@@ -14,6 +14,11 @@
 	--white-alpha-40: rgba(255, 255, 255, 0.40);
 	--white-alpha-25: rgba(255, 255, 255, 0.25);
 	--backdrop-filter-blur: blur(5px);
+	--gradient-color-1: #50dc6f;
+   --gradient-color-2: #00d6ba;
+   --gradient-color-3: #0390e2;
+   --background-base: #212121;
+   --gradient-color-4: var(--background-base);
 }
 
 /* Dark theme override variables */
@@ -43,6 +48,23 @@ body.dark{
  	box-sizing: border-box;
 
  } 
+body canvas{
+		--gradient-color-1: #f158de;
+    --gradient-color-2: #3f00d6;
+    --gradient-color-3: #e20393;
+    --gradient-color-4: #0a0a0a;
+    -webkit-animation: svelte-nmtq9y-canvas-hue-rotate 15s linear infinite;
+    animation: svelte-nmtq9y-canvas-hue-rotate 15s linear infinite;
+    height: 100%;
+    inset-block-end: 0;
+    inset-inline-end: 0;
+    -webkit-mask: url(/img/hero-mask.png) bottom right/cover no-repeat;
+    mask: url(/img/hero-mask.png) bottom right/cover no-repeat;
+    min-width: 100vh;
+    position: absolute;
+    width: 60vw;
+    z-index: -1;
+  }
 
  body{
  	min-height: 100vh;
@@ -1126,7 +1148,7 @@ Header -------------------
 	.testi-img{
         margin-bottom: 25px;
     }
-.portfoilo-section .filters ul li {
+.por .filters ul li {
     padding: 6px 6px;
   }
 
